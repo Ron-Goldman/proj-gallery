@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Book-Shop</title>
+</head>
+
+<body onload="onInit()">
+
+    <section class="search-bar">
+        <form autocomplete="off">
+            <div class="autocomplete" style="width:300px;">
+                <input id="myInput" type="text" name="books" placeholder="search books">
+            </div>
+        </form>
+        <button onclick="onSearchBook()">search</button>
+    </section>
+
+    <section class="add-book">
+        <input type="text" name="book-name" placeholder="Book name" />
+        <input type="text" name="price" placeholder="price" />
+        <input type="text" name="quantity" placeholder="Quantity" />
+        <button onclick="onAddBook()">Add Book</button>
+    </section>
+
+    <table class="books-box">
+        
+        <tbody>
+            
+        </tbody>
+    </table>
+
+
+
+    <script src="js/services/utils-service.js"></script>
+    <script src="js/services/book-storage.js"></script>
+    <script src="js/services/book-service.js"></script>
+    <script src="js/services/book-controller.js"></script>
+
+
+
+</body>
+
+</html>

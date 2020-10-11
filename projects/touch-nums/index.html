@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch The Nums</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="init()">
+    <div class="choose-level">
+        <span class="level">Choose Your Level:</span><br />
+        <input type="radio" name="level" onclick="chooseYourLevel(0)" checked> rookie (9)
+        <input type="radio" name="level" onclick="chooseYourLevel(1)">vet (25)
+        <input type="radio" name="level" onclick="chooseYourLevel(2)">superstar (36)
+
+    </div>
+    <div class="pyro" style="display: none">
+        <div class="before"></div>
+        <div class="after"></div>
+    </div>
+    <table>
+        <div class="game-stats">
+            score: <span> 0 </span>
+            timer: <span> 0 </span>
+        </div>
+        <tbody class="board"></tbody>
+    </table>
+
+    <button onclick="init()">restart</button>
+
+    <div class="modal">YOU WON!! <br>YOU Won!</div>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>

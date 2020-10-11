@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Mine-Sweeper</title>
+</head>
+<body onload="init()">
+    <div class="pyro" style="display: none">
+        <div class="before"></div>
+        <div class="after"></div>
+    </div>
+    <div class="left">
+        <h1 class="level">Choose Your Level:</h1>
+        <input type="radio" name="level" onclick="chooseYourLevel(0)" > Beginner
+        <input type="radio" name="level" onclick="chooseYourLevel(1)"> Medium
+        <input type="radio" name="level" onclick="chooseYourLevel(2)" checked> Expert
+        <div class="modal">
+            <h2>flags left: <span>3</span> <br> score: <span>0</span></h2>
+            <button onclick="init()">restart</button>
+            <h2>lives left: <br> (click to use life) <br> </h2>
+        </div>
+    </div>
+    <div class="board-container">
+        <table class="center">
+            <tbody class="board"></tbody>
+        </table>
+    </div>
+    <div class="message-box">YOU WON!! <br>YOU WON!!</div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
